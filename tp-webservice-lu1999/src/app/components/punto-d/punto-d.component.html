@@ -1,0 +1,106 @@
+<div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="row col-12"> 
+            <form class="form md-col-12">                    
+                <div class="form-group">
+                  <label class="col-md-12">Pais</label>
+                  <div class="col-md-12">
+                      <select class="form-control" name="cc_exp_mo" size="0">
+                          <option value="01">ESTADOS UNIDOS</option>
+                          <option value="02">ARGENTINA</option>
+                          <option value="03">ESPAÑA</option>
+                          <option value="04">ITALIA</option>
+                          <option value="05">ALEMANIA</option>
+                      </select>
+                  </div>
+               </div>
+              
+               <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Casos Confirmados
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Curados
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Fallecidos
+                </label>
+              </div>
+              
+               <button class="btn btn-primary">Enviar</button>
+             
+           </form>
+         </div>
+        </div>    
+          <div class="row col-md-12">
+            <div class="table-responsive">
+              <div class="row justify-content-around">
+                <h2 class="font-weight-normal pb-2 mt-3 md-col-9"> Estadisticas</h2> 
+              <button class="btn btn-primary md-col-3" (click)="getInfoCovid()">Cargar Estadisticas</button>    
+            </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Ubicacion</th>                            
+                    <th>Casos confirmados</th>
+                    <th>Casos por 1mill. de personas</th>
+                    <th>Curados</th>
+                    <th>Fallecidos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="../../../assets/d/mundo.PNG" width="23"> Todo el mundo</td>                            
+                    <td>{{vector_infoCovid[0]['Total Cases_text']}}</td>
+                    <td>{{vector_infoCovid[0]['Active Cases_text']}}</td>
+                    <td>{{vector_infoCovid[0]['Total Recovered_text']}}</td>
+                    <td>{{vector_infoCovid[0]['Total Deaths_text']}}</td>                           
+                  </tr>
+                  <tr>
+                    <td><img src="../../../assets/a/ar.PNG" > Argentina</td>
+                    <td>{{vector_infoCovid[40]['Total Cases_text']}}</td>Total Deaths_text
+                    <td>{{vector_infoCovid[40]['Active Cases_text']}}</td>
+                    <td>{{vector_infoCovid[40]['Total Recovered_text']}}</td>
+                    <td>{{vector_infoCovid[40]['']}}</td> 
+                  </tr>
+
+                  <tr>
+                    <td><img src="../../../assets/a/eeuu.PNG"> Estados Unidos</td>
+                    <td>{{vector_infoCovid[1]['Total Cases_text']}}</td>
+                    <td>{{vector_infoCovid[1]['Active Cases_text']}}</td>
+                    <td>{{vector_infoCovid[1]['Total Recovered_text']}}</td>
+                    <td>{{vector_infoCovid[1]['Total Deaths_text']}}</td> 
+                  </tr>
+                  <tr>
+                    <td><img src="../../../assets/d/españa.PNG" width="23" > España</td>
+                    <td>{{vector_infoCovid[4]['Total Cases_text']}}</td>
+                    <td>{{vector_infoCovid[4]['Active Cases_text']}}</td>
+                    <td>{{vector_infoCovid[4]['Total Recovered_text']}}</td>
+                    <td>{{vector_infoCovid[4]['Total Deaths_text']}}</td> 
+                  </tr>
+                  <tr>
+                    <td><img src="../../../assets/d/italia.PNG" width="23" > Italia</td>
+                    <td>{{vector_infoCovid[6]['Total Cases_text']}}</td>
+                    <td>{{vector_infoCovid[6]['Active Cases_text']}}</td>
+                    <td>{{vector_infoCovid[6]['Total Recovered_text']}}</td>
+                    <td>{{vector_infoCovid[6]['Total Deaths_text']}}</td> 
+                  </tr>
+                  <tr>
+                    <td><img src="../../../assets/d/alemania.PNG"width="23" > Alemania</td>
+                    <td>{{vector_infoCovid[8]['Total Cases_text']}}</td>
+                    <td>{{vector_infoCovid[8]['Active Cases_text']}}</td>
+                    <td>{{vector_infoCovid[8]['Total Recovered_text']}}</td>
+                    <td>{{vector_infoCovid[8]['Total Deaths_text']}}</td> 
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+         </div>
+    </div>            
+</div>

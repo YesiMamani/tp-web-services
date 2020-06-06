@@ -1,0 +1,61 @@
+<div>
+    <div class="row">
+      <h1 class="col-md-9 text-center font-weight-bold">Últimas Noticias</h1>
+      <div class="col-md-3"></div>
+    </div>
+    <div class="form-group row">
+        <label for="categoria" class="col-2">Categoria:</label>
+        <select [(ngModel)]="categoria" name="categoria" id="categoria" class="form-control col-10">
+            <option value="soccer" selected>Soccer</option>
+            <option value="cricket" selected>Cricket</option>
+            <option value="basketball" selected>Basketball</option>
+        </select>
+    </div>
+    <div class="form-group row">
+        <button type="button" class="btn btn-primary" (click)="cargarNoticias()">Cargar Noticias</button>
+    </div>
+    <div class="row">
+      <content class="col-md-9">
+          <div class="row">
+           <div class="card-deck">
+              <div class="card">
+               <img src="{{vector_noticia[0].img}}" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h6 class="card-subtitle bg-danger text-white badge font-weight-normal">{{vector_noticia[0].cap}}</h6>
+                 <h5 class="card-title font-weight-bold">{{vector_noticia[0].des}}</h5>
+               </div>
+              </div>
+            <div class="card">
+              <img src="{{vector_noticia[1].img}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-subtitle  bg-danger text-white badge font-weigth-normal">{{vector_noticia[1].cap}}</h6>
+                <h5 class="card-title font-weight-bold">{{vector_noticia[1].des}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card-deck">
+            <div class="card">
+             <img src="{{vector_noticia[2].img}}" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h6 class="card-subtitle  bg-danger text-white badge font-weight-normal">{{vector_noticia[2].cap}}</h6>
+               <h5 class="card-title font-weight-bold"> <i class="fas fa-headphones" style="color: red;"></i> {{vector_noticia[2].des}}</h5>
+             </div>
+            </div>
+          <div class="card">
+            <img src="{{vector_noticia[3].img}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-subtitle  bg-danger text-white badge font-weigth-normal">{{vector_noticia[3].cap}}</h6>
+              <h5 class="card-title font-weight-bold"> <i class="fas fa-headphones" style="color: red;"></i> {{vector_noticia[3].des}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      </content>
+      <aside class="col-md-3">
+        <img src="./../../../assets/b/asideShoes.PNG" style="width: 120%;" >
+      </aside>
+    </div>
+   
+  </div>

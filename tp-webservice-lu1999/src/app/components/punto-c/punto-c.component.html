@@ -1,0 +1,46 @@
+<div>
+    <div class="row">
+        <content class="col-md-12">
+          <h1 class="text-success">Los signos del zodiaco</h1>
+          <div class="row ml-2">
+            <h5>Seleccione su signo para obtener su horoscopo diario.</h5>
+          </div>
+          <div class="row mt-3">
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/aries.PNG"><button id="aries" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Aries</button></div></div>            
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/leo.PNG"><button id="leo" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8" >Leo</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/sagitario.PNG" ><button id="sagittarius" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Sagitario</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/tauro.PNG" ><button id="taurus" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Tauro</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/virgo.PNG" ><button id="virgo" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Virgo</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/capricornio.PNG" ><button id="capricorn" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Capricornio</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/geminis.PNG" ><button id="gemini" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Geminis</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/libra.PNG" ><button id="libra" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Libra</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/acuario.PNG" ><button id="aquarius" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Acuario</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/cancer.PNG" ><button id="cancer" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Cancer</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/escorpio.PNG" ><button id="scorpio" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Escorpio</button></div></div>
+              <div class="col-md-4 col-sm-6"><div class="row d-inline"><img class="col-md-4" src="../../../assets/c/piscis.PNG" ><button id="pisces" (click)="getHoroscopo($event)" type="button" class="btn btn-success btn-lg col-md-8">Piscis</button></div></div>
+          </div>
+  
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <h3 class="bg-success text-white font-weight-normal">{{signoHoroscopo.name}} - {{signoHoroscopo.birthday}}</h3>
+                <div class="row ml-3">
+                  <div class="col-md-8">
+                    <h3 class="text-info">{{signoHoroscopo.name}}</h3>
+                    <p>{{description}}</p></div>
+                  <div class="col-md-4"><img src="../../../assets/c/sagitarioLogo.png" width="60%" alt=""></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+              <h3 class="bg-success text-white font-weight-normal">Libra - Mes</h3>
+                <div class="row ml-3">
+                  <div class="col-md-8">
+                    <h3 class="text-info">Aries</h3>
+                    <p>Los Aries destacan por su auto control y disciplina, que los hacen sumamente responsables, aunque este grado sumo de responsabilidad les hace estar en ocasiones en desacuerdo con el mundo que les rodea.</p></div>
+                  <div class="col-md-4"><img src="../../../assets/c/libraLogo.png" width="60%" alt=""></div>
+                </div>
+            </div>
+  
+        </div>
+        </content>
+    </div>
+  </div>
